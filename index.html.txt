@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наталья Орехова — Педагог-воспитатель</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Шапка */
+        .header {
+            background: #6a8fb9;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+        }
+
+        /* Основной контент */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Принципы работы */
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .principle-item {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Контакты */
+        .contacts {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        /* Форма обратной связи */
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        button {
+            background: #6a8fb9;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #5a7ca9;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .contacts {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Наталья Орехова</h1>
+        <p>Педагог-воспитатель детей с особенностями психического развития</p>
+    </header>
+
+    <div class="container">
+        <!-- О себе -->
+        <section class="section">
+            <h2>О профессионале</h2>
+            <p>Стаж работы: 12 лет<br>
+            Специализация: коррекция поведения, развивающие методики для детей с РАС, СДВГ и другими особенностями.</p>
+        </section>
+
+        <!-- Принципы работы -->
+        <section class="section">
+            <h2>Мои принципы</h2>
+            <div class="principles">
+                <div class="principle-item">
+                    <h3>Индивидуальный подход</h3>
+                    <p>Каждый ребёнок уникален, и я нахожу подход к каждому.</p>
+                </div>
+                <div class="principle-item">
+                    <h3>Работа в команде</h3>
+                    <p>Сотрудничество с родителями и психологами для лучшего результата.</p>
+                </div>
+                <div class="principle-item">
+                    <h3>Доказательные методики</h3>
+                    <p>Использую только проверенные и эффективные методы.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section">
+            <h2>Контакты</h2>
+            <div class="contacts">
+                <div class="contact-item">
+                    <h3>Телефон</h3>
+                    <p>+7 (XXX) XXX-XX-XX</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>n.orekhova@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Пушкина, 10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="section">
+            <h2>Запись на консультацию</h2>
+            <form class="contact-form" action="https://formspree.io/f/xzzepapb" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
